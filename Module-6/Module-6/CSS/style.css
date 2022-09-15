@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:"Roboto",sans-serif;
+    overflow: hidden;
+    user-select: none;
+}
+  
+.showcase{
+  position: absolute;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display:flex ;
+  justify-content:space-between;
+  align-items: center;
+  color: black;
+  z-index: 2;
+  transition: right 0.5s ease;
+}
+.showcase.active {
+  right:300px;
+}
+.showcase header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: black;
+  background: grey;
+}
+
+.toggle{
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: url('../images/3bars.png');
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+  cursor: pointer;
+  transition: right 0.5s ease;
+}
+.toggle.active{
+  background: url('../images/cancel.png');
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: center;
+}
+  
+.centerText{
+  position: absolute;
+  color: cyan;
+  text-shadow: 2px 2px red;
+  top: 100px;
+  bottom:0px;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 30px;
+  z-index: 1;
+  line-height: 80px;
+}
+video{
+  position:absolute;
+  top:75px;
+  left:0;
+  width:100%; 
+  height: 100%;
+  object-fit: cover; 
+  overflow: hidden;  
+  mix-blend-mode:overlay;
+  }
+.menu {
+  position: absolute;
+  top:0;
+  right:0;
+  width: 300px;
+  height: 100%;
+  line-height: 50px;
+  align-items: center;
+  justify-content: center;
+  background-color: #222222;
+  border-left: 3px solid transparent;
+}  
+.menu ul{
+  position: relative;
+  list-style: none;
+  top:30%;
+}
+.menu ul li a{
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  padding-left: 110px;
+  font-weight: 500;
+  padding-top: 10px;  
+  padding-bottom: 10px;
+  display: block;
+  width: 100%;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+}
+.menu ul li a:hover {
+  text-decoration: none;
+  font-size: 24px;
+  color: red;
+  border-left-color: cyan;
+  border-right-color: cyan;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+footer{
+  position: absolute;
+  top: 900px;
+  bottom:0px;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 20px;
+  z-index: 1;
+  line-height: 80px;
+}
